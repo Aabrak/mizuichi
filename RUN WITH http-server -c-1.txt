@@ -1,0 +1,3 @@
+lets you change file and refresh for changes without restarting server
+
+http-server -c-1
