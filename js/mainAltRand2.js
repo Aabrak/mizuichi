@@ -76,6 +76,8 @@ function animate() {
         kobsTable[i][j][k].rotation.y += Math.sin(j/kobsTableSize/30);
         kobsTable[i][j][k].rotation.z += Math.sin(k/kobsTableSize/30);
 
+        camera.lookAt(kobsTable[kobsTableSize/2][kobsTableSize/2][kobsTableSize/2].position)
+
       }
     }
   }
