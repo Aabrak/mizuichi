@@ -69,6 +69,10 @@ for (let i = 0; i < kobsTableSize; i++) {
       kobsTable[i][j][k].position.x = i*kobsTableRatio;
       kobsTable[i][j][k].position.y = j*kobsTableRatio;
       kobsTable[i][j][k].position.z = k*kobsTableRatio;
+      
+      kobsTable[i][j][k].scale.x = i/kobsTableSize;
+      kobsTable[i][j][k].scale.y = j/kobsTableSize;
+      kobsTable[i][j][k].scale.z = k/kobsTableSize;
 
       kobsTable[i][j][k].material.color.r = i/kobsTableSize;
       kobsTable[i][j][k].material.color.g = j/kobsTableSize;
@@ -97,9 +101,6 @@ function animate() {
         // kobsTable[i][j][k].position.y = Math.sin(kobsTable[i][j][k].rotation.y)*8;
         // kobsTable[i][j][k].position.z = Math.sin(kobsTable[i][j][k].rotation.z)*8;
 
-        kobsTable[i][j][k].scale.x = i/kobsTableSize;
-        kobsTable[i][j][k].scale.y = j/kobsTableSize;
-        kobsTable[i][j][k].scale.z = k/kobsTableSize;
 
         kobsTable[i][j][k].rotation.x += Math.sin(i/kobsTableSize/30);
         kobsTable[i][j][k].rotation.y += Math.sin(j/kobsTableSize/30);
